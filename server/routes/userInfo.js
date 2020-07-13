@@ -4,7 +4,7 @@ const express = require('express');
 const user = require('../common/user');
 const util = require('../../lib/util');
 
-const NOT_LOGIN_MSG = '登录超时，请重新使用微哨打开费用查询应用！';
+const NOT_LOGIN_MSG = '登录超时，请重新打开应用！';
 
 const router = express.Router();
 router.get('/', function(req, res, next) {
