@@ -12,14 +12,14 @@ const session = require('express-session');
 const compress = require('compression'); // gzip
 const log4js = require('./common/log4js');
 const RedisStore = require('connect-redis')(session);
-const Options = require('./config.json');
+// const Options = require('./config.json');
 const paths = config.utils_paths;
 const app = express();
 
-const userVerify = require('./routes/userVerify');
-const userInfo = require('./routes/userInfo');
+// const userVerify = require('./routes/userVerify');
+// const userInfo = require('./routes/userInfo');
 
-app.set('X-Powered-By', 'Weishao-LightServer');
+// app.set('X-Powered-By', 'Weishao-LightServer');
 app.use(express.static(path.join(__dirname, 'public')));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -27,22 +27,22 @@ app.set('view engine', 'ejs');
 // middleware setup
 app.use(compress()); // gzip
 app.use(logger('dev'));
-app.use(session({ // session
-    store: new RedisStore({
-        host: Options.redis.host,
-        port: Options.redis.port,
-        pass: Options.redis.pass,
-        ttl: Options.redis.ttl
-        //      client: client
-    }),
-    key: Options.redis.sessionkey,
-    secret: Options.redis.secret,
-    resave: false,
-    saveUninitialized: false
-}));
+// app.use(session({ // session
+//     store: new RedisStore({
+//         host: Options.redis.host,
+//         port: Options.redis.port,
+//         pass: Options.redis.pass,
+//         ttl: Options.redis.ttl
+//         //      client: client
+//     }),
+//     key: Options.redis.sessionkey,
+//     secret: Options.redis.secret,
+//     resave: false,
+//     saveUninitialized: false
+// }));
 
-app.use('/check', userVerify);
-app.use('/userInfo', userInfo);
+// app.use('/check', userVerify);
+// app.use('/userInfo', userInfo);
 
 // Proxy config
 if (config.proxy.enabled) {
