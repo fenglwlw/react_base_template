@@ -1,13 +1,16 @@
 
 appname
 =======
-author:fandetao@ruijie.com.cn
+author:liwei
 =============================
 开发环境要求
 ----------
 改动主题色；
+
 strings：BASECOLOR
+
 theme.scss: $base-color
+
 package.json: theme
 ----------
 
