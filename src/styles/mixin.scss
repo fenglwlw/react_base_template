@@ -1,0 +1,24 @@
+/*
+* @Author: wangshuya
+* @Date:   2019-01-09 18:16:06
+* @Last Modified by:   wangshuya
+* @Last Modified time: 2019-01-09 18:16:09
+*/
+@mixin border-1px($style: solid, $color: #ddd){
+	position: relative;
+	&:after {
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		border-top: 1px $style $color;
+		content: ' ';
+	}
+}
+	
+@mixin border-none() {
+	&:after {
+		display: none;
+	}
+}

@@ -1,0 +1,14 @@
+{
+    "redis": {
+        "sessionkey": "whistle-school-classcall",
+        "host": "172.17.168.54",
+        "port": 6379,
+        "pass": "",
+        "secret": "Whistle2016#webapp"
+    },
+    "oauth": {
+        "url": "https://api.weishao.com.cn/oauth/token",
+        "key": "9Q3TM242Ca9C77R6",
+        "secret": "IODx4te39GDQb06ek99ZCwpZ1n03hlxS"
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard",
+    "standard-react"
+  ],
+  "env"     : {
+    "browser" : true
+  },
+  "globals" : {
+    "Action"       : false,
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__DEBUG__"    : false,
+    "__BASENAME__" : false
+  },
+  "rules": {
+    "semi" : [2, "always"],
+    "max-len": [2, 120, 2],
+    "operator-linebreak": ["error", "before"],
+    "camelcase": 2,                         // 强制驼峰法命名
+    "eqeqeq": 0,                            //必须使用全等
+    "no-multiple-empty-lines":0,            // 多个空行
+    "space-before-function-paren":0,        // fun名前可以有空格
+    "yoda": [2, "never"],                   // 禁止yoda表达式
+    "one-var":[2,"never"],                  // 禁止一个var串联定义多个变量
+    "brace-style":2,                        // 大括号风格
+    "padded-blocks": 1,                     // 块语句内行首行尾是否要空行
+    "curly": 2,                              // if、else、while、for代码块用{}包围
+    "no-useless-escape":0
+  }
+}

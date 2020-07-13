@@ -1,0 +1,7 @@
+@import 'styles/mixin.scss';
+$prefix: ws_tab;
+.#{$prefix} {
+    padding: 8px 10% 12px 10%;
+    margin: 0 auto;
+    @include border-1px;
+}

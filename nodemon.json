@@ -1,0 +1,7 @@
+{
+    "verbose": false,
+    "ignore": ["dist", "coverage", "tests", "src", ".git", "node_modules/**/node_modules"],
+    "env": {
+        "NODE_ENV": "development"
+    }
+}

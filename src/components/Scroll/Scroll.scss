@@ -1,0 +1,24 @@
+.list-wrapper {
+	height: 100%;
+	overflow: hidden;
+}
+.pulldown-text {
+    height: 32px;
+    line-height: 32px;
+    width: 100%;
+    color: #C6C8C9;
+    text-align: center;
+    transition: all .2s;
+    &.fixed {
+        position: absolute;
+        top: -32px;
+    }
+}
+.pullup-text {
+    height: 32px;
+    line-height: 32px;
+    width: 100%;
+    color: #C6C8C9;
+    text-align: center;
+    transition: all .2s;
+}

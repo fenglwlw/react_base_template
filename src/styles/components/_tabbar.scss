@@ -1,0 +1,28 @@
+@import 'styles/mixin.scss';
+@import 'styles/theme.scss';
+$prefix: ws_tabbar;
+.#{$prefix} {
+    .line_top{
+        @include border-1px;
+    }
+    background-color: #fff;
+    li{
+        float: left;
+        text-align: center;
+        padding: 10px 0 5px 0;
+        img{
+            display: block;
+            margin: 0 auto;
+            height: 18px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 14px;
+            color: #888;
+            margin-top: 3px;
+        }
+        p.active{
+            color: $base-color;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+$prefix: ws-toast;
+.#{$prefix} {
+  position: fixed;
+  z-index: 5000;
+  width: 90px;
+  min-height: 90px;
+  top: 180px;
+  left: 50%;
+  margin-left: -45px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border-radius: 5px;
+  color: #FFFFFF;
+  animation:toshow .1s;
+  -moz-animation:toshow .1s; /* Firefox */
+  -webkit-animation:toshow .1s; /* Safari and Chrome */
+  -o-animation:toshow .1s; /* Opera */
+}
+.#{$prefix} .ws-icon_toast {
+  margin: 15px 0 9px;
+}
+.#{$prefix} .ws-icon_toast .#{$prefix}_icon{
+  width: 36px;
+  height: 36px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.#{$prefix} .#{$prefix}__content {
+  margin: 0 0 15px;
+  font-size: 13px;
+}
+.#{$prefix}_toptips {
+  position: fixed;
+  //width: auto;
+  height:32px;
+  padding: 0 15px;
+  top:40%;
+  left: 50%;
+  animation:toshow .1s;
+  -moz-animation:toshow .1s; /* Firefox */
+  -webkit-animation:toshow .1s; /* Safari and Chrome */
+  -o-animation:toshow .1s; /* Opera */
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transition: cubic-bezier();
+  z-index: 999;
+  background: rgba(0,0,0,0.6);
+  border-radius: 5px;
+  font-family: MicrosoftYaHei;
+  font-size: 13px;
+  color: #FFFFFF;
+  line-height: 32px;
+  text-align: center;
+}
+@keyframes toshow{
+  from {opacity: 0;}
+  to {opacity: 0.6;}
+}
+@-moz-keyframes toshow /* Firefox */
+{
+  from {opacity: 0;}
+  to {opacity: 0.6;}
+}
+@-webkit-keyframes toshow /* Safari 和 Chrome */
+{
+  from {opacity: 0;}
+  to {opacity: 0.6;}
+}
+@-o-keyframes toshow /* Opera */
+{
+  from {opacity: 0;}
+  to {opacity: 0.6;}
+}

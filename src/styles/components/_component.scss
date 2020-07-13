@@ -1,0 +1,198 @@
+$prefix_actionbar: ws_actionbar;
+
+.#{$prefix_actionbar}_container {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #3a94ed;
+}
+
+.#{$prefix_actionbar}_back,
+.#{$prefix_actionbar}_back:active{
+  display: block;
+  position: absolute;
+  float: left;
+  width: 44px;
+  height: 50px;
+  z-index: 99;
+}
+
+.#{$prefix_actionbar}_back,
+.#{$prefix_actionbar}_back:active{
+  img {
+    width: 10px;
+    height: 16px;
+    background-size: 10px 16px;
+    vertical-align: text-bottom;
+    margin-left: 18px;
+  }
+}
+
+.#{$prefix_actionbar}_back:active {
+  background-color: #e3e3e3;
+}
+
+.#{$prefix_actionbar}_title {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+}
+.#{$prefix_actionbar}_btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 27%;
+  font-size: 0.82em;
+  text-align: center;
+  z-index: 9;
+  color: #ffffff;
+  cursor: pointer;
+}
+$prefix_actionsheet: actionsheet;
+
+.#{$prefix_actionsheet}_menu {
+  background-color: #fff;
+  max-height: 160px;
+  overflow: auto;
+}
+
+.actionsheet_action {
+  background-color: #fff;
+}
+
+.actionsheet_cell {
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+}
+.#{$prefix_actionsheet}_cell_active {
+  color:#3a94ed;
+  background-color: #eee;
+  font-size: 16px;
+}
+.#{$prefix_actionsheet}_toggle {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+}
+
+.#{$prefix_actionsheet} {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 999;
+  width: 100%;
+  background-color: #efeff4;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+
+.#{$prefix_actionsheet}_btncontainer {
+  text-align: center;
+  background-color: #eee;
+  height: 32px;
+  line-height: 32px;
+}
+.#{$prefix_actionsheet}_btnleft {
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.#{$prefix_actionsheet}_btnright {
+  font-size: 14px;
+  color:#3a94ed;
+  padding-right: 5px;
+}
+.#{$prefix_actionsheet}_btn_title {
+  font-size: 12px;
+  color: #9e9393;
+}
+
+.mask, .mask_transition, .mask_transparent {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.mask {
+  background: rgba(0, 0, 0, .6);
+}
+
+.coverShow {
+  position: fixed;
+  top: 35%;
+  left: 0;
+  width: 68%;
+  height: auto;
+  z-index: 99999;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 15px;
+  right: 0;
+  margin: 0 auto;
+}
+.coverShow h4 {
+  padding-top: 27px;
+  color: #3e4852;
+}
+
+.man_number {
+  padding: 12px 3% 0 3%;
+  font-size: 0.82em;
+  color: #6a6e7a;
+}
+
+.btn {
+  border-top: 1px solid #e2e2e2;
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+.btn_1 {
+  display: inline;
+  float: left;
+  text-align: center;
+  margin: 0 auto;
+  width: 49%;
+  line-height: 50px;
+  border-right: 1px solid #d7d7d7;
+  color: #383838;
+  font-size: 0.93em;
+}
+
+.btn_1:hover {
+  color: #3a94ed;
+}
+
+.btn_2 {
+  display: inline;
+  float: left;
+  text-align: center;
+  margin: 0 auto;
+  width: 49%;
+  line-height: 50px;
+  color: #1c74d9;
+  font-size: 0.93em;
+}
+
+.btn_2:hover {
+  color: #3a94ed;
+}

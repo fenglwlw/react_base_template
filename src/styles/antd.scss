@@ -1,0 +1,71 @@
+#root {
+	.am-tabs-default-bar-underline {
+		border-color: $base-color;
+	}
+	.am-tabs-default-bar-tab-active {
+		color: $base-color;
+	}
+	.am-button-primary {
+		background-color: $base-color;
+		border-color: $base-color;
+		&:before {
+			border-color: $base-color;
+		}
+	}
+}
+.am-picker-popup-wrap .am-picker-popup-item {
+	color: $base-color;
+}
+.am-search {
+	background-color: #fff;
+	.am-search-input {
+		background: #F0F0F0;
+		border-radius: 4px;
+	}
+	.am-search-cancel {
+		color: #505050;
+	}
+}
+.am-modal-button-group-h .am-modal-button:last-child,.am-modal-button-group-v .am-modal-button:last-child {
+    color: $base-color;
+}
+.am-picker-popup-title{
+    color: #000!important;
+}
+.am-carousel-wrap-dot-active > span{
+    background: $base-color;
+}
+//switch small
+.switch_small{
+    .am-switch input[type="checkbox"]:checked + .checkbox:after{
+        -webkit-transform: translateX(14px);
+        transform: translateX(14px);
+    }
+    .am-switch .checkbox:after{
+        width: 16px;
+        left: 2.5px;
+    }
+    .am-switch .checkbox{
+        height: 20px;
+    }
+    .am-switch .checkbox:after, .am-switch .checkbox:before{
+        top: 1px;
+        height: 16px;
+    }
+    .am-switch .checkbox:before{
+        width: 16px;
+    }
+    .am-switch .checkbox{
+        width: 34px;
+        height: 18px;
+    }
+}
+
+.am-search-input .am-search-synthetic-ph-placeholder{
+    color: #b6b6b6;
+    word-spacing: 0px;
+}
+.am-search-input input[type="search"]{
+    line-height: 28px;
+    font-family:  -apple-system-font, "Helvetica Neue", sans-serif;
+}

@@ -1,0 +1,43 @@
+.list{
+    li{
+        padding: 14px 15px 14px 80px;
+        overflow: hidden;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        .img{
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            margin-top: -25px;
+            width: 50px;
+        }
+        .main_box{
+            .title{
+                font-size: 15px;
+                color: #505050;
+                line-height: 20px;
+            }
+            .desc{
+                overflow: hidden;
+                font-size: 13px;
+                color: #888;
+                height: 19px;
+                line-height: 19px;
+                margin-top: 5px;
+                .size{
+                    float: left;
+                }
+                .date{
+                    float: right;
+                }
+            }
+        }
+        .arrow{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin-top: -6px;
+            width: 7px;
+        }
+    }
+}
