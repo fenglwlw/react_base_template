@@ -136,7 +136,7 @@
     "react-addons-css-transition-group": "^15.6.2",
     "react-animated-router": "^0.1.12",
     "react-app-polyfill": "^1.0.6",
-    "react-dev-utils": "^7.0.3",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.8.0-alpha.1",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
